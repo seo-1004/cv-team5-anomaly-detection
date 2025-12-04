@@ -72,13 +72,13 @@ Autoencoder 기반 이상 탐지는 **정상 데이터만으로도 결함을 검
 
 ```bash
 cv-team5-anomaly-detection/
-├── raw/
-│   └── diligent/
-│       └── pmsData/                 # DiLiGenT raw images, masks, and lighting metadata
-│
-├── processed/
-│   ├── normals/                     # Generated normal maps (N_*.npy, N_*.png)
-│   └── anomalies/                   # Generated anomaly maps (A_*.npy, A_*.png) and masks (M_*.npy, M_*.png)
+├── data/
+│   ├── raw/
+│   │   └── diligent/
+│   │     └── pmsData/                 # DiLiGenT raw images, masks, and lighting metadata
+│   └── processed/
+│       ├── normals/                     # Generated normal maps (N_*.npy, N_*.png)
+│       └── anomalies/                   # Generated anomaly maps (A_*.npy, A_*.png) and masks (M_*.npy, M_*.png)
 │
 ├── results/
 │   ├── input/                       # Original input images for inference
