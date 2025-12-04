@@ -72,13 +72,20 @@ Autoencoder 기반 이상 탐지는 **정상 데이터만으로도 결함을 검
 
 ```bash
 cv-team5-anomaly-detection/
+├── README.md
+├── requirements.txt
+├── run.ipynb                        # Pipeline execution for development and experimentation
+├── demo.ipynb                       # Final demo notebook for presentation/submission
+│
 ├── data/
 │   ├── raw/
 │   │   └── diligent/
-│   │     └── pmsData/                 # DiLiGenT raw images, masks, and lighting metadata
+│   │       └── pmsData/             # DiLiGenT raw images, masks, and lighting metadata
+│   │
 │   └── processed/
-│       ├── normals/                     # Generated normal maps (N_*.npy, N_*.png)
-│       └── anomalies/                   # Generated anomaly maps (A_*.npy, A_*.png) and masks (M_*.npy, M_*.png)
+│       ├── normals/                 # Generated normal maps (N_*.npy, N_*.png)
+│       └── anomalies/               # Generated anomaly maps (A_*.npy, A_*.png) 
+│                                   # and masks (M_*.npy, M_*.png)
 │
 ├── results/
 │   ├── input/                       # Original input images for inference
@@ -94,6 +101,7 @@ cv-team5-anomaly-detection/
 │   │   │       ├── preprocess.py
 │   │   │       ├── fps_solver.py
 │   │   │       └── diagnostics.py
+│   │   │
 │   │   └── anomaly/
 │   │       ├── generate_anomalies.py
 │   │       ├── mapping.py
@@ -118,11 +126,7 @@ cv-team5-anomaly-detection/
 ├── checkpoints/
 │   └── autoencoder/
 │       └── best_model_epoch_100.pth # Saved checkpoints for trained models
-│
-├── run.ipynb                    # Pipeline execution for development and experimentation
-├── demo.ipynb                   # Final demo notebook for presentation/submission
-├── README.md
-└── requirements.txt
+
 ```
 
 ---
