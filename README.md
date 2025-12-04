@@ -208,7 +208,7 @@ cv-team5-anomaly-detection/
 ### 1️⃣ Environment Setup
 
 ```bash
-git clone https://github.com/your-id/cv-team5-anomaly-detection.git
+git clone https://github.com/seo-1004/cv-team5-anomaly-detection.git
 cd cv-team5-anomaly-detection
 
 pip install -r requirements.txt
