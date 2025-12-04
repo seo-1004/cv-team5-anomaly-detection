@@ -1,9 +1,23 @@
 # cv-team5-anomaly-detection
 
+
 Photometric Stereo(PS)로 얻은 Normal Map과 Autoencoder(AE)를 이용해  
 표면 결함을 **pixel-level anomaly map**으로 탐지하는 프로젝트입니다.
 
 ---
+
+> ⚠️ **Important Notice (Model 안내)**  
+> GitHub의 용량 제한(100MB)으로 인해 학습된 Autoencoder 모델 파일(`best_model_epoch_100.pth`)은  
+> 저장소에 포함되어 있지 않습니다.  
+> 아래 구글 드라이브 링크에서 모델 파일을 다운로드한 뒤,
+>
+> **`checkpoints/autoencoder/` 디렉토리 안에 저장하여 실행을 진행해 주세요.**
+>
+> [🔗 **Download best_model_epoch_100.pth** ](https://buly.kr/FAebWyP)
+
+
+---
+
 
 ## Table of Contents
 
