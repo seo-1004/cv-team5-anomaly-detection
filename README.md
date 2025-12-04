@@ -5,16 +5,34 @@ Photometric Stereo(PS)로 얻은 Normal Map과 Autoencoder(AE)를 이용해
 표면 결함을 **pixel-level anomaly map**으로 탐지하는 프로젝트입니다.
 
 ---
+## 🚀 Standalone 실행법 (Easy Run Guide)
 
-> ⚠️ **Important Notice (Model 안내)**  
-> GitHub의 용량 제한(100MB)으로 인해 학습된 Autoencoder 모델 파일(`best_model_epoch_100.pth`)은  
-> 저장소에 포함되어 있지 않습니다.  
-> 아래 구글 드라이브 링크에서 모델 파일을 다운로드한 뒤,
->
-> **`checkpoints/autoencoder/` 디렉토리 안에 저장하여 실행을 진행해 주세요.**
->
-> [🔗 Download best_model_epoch_100.pth](https://buly.kr/FAebWyP)
+아래 명령어만 실행하면 필요한 라이브러리 설치와 모델 자동 다운로드가 완료되며,  
+`run.ipynb` 또는 `demo.ipynb`를 바로 실행할 수 있습니다.
 
+### 🖥️ 로컬 PC (Windows / Mac / Linux)
+
+```bash
+git clone https://github.com/seo-1004/cv-team5-anomaly-detection.git
+cd cv-team5-anomaly-detection
+
+pip install -r requirements.txt
+./setup.sh     # Windows는 bash setup.sh
+```
+
+### ☁️ Google Colab
+```bash
+# (optional) 작업 내용을 Google Drive에 저장하려면 활성화
+# from google.colab import drive
+# drive.mount('/content/drive')
+
+!git clone https://github.com/seo-1004/cv-team5-anomaly-detection.git
+%cd cv-team5-anomaly-detection
+
+!pip install -r requirements.txt
+!bash setup.sh
+```
+이후 run.ipynb 또는 demo.ipynb 실행
 
 ---
 
