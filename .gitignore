@@ -1,6 +1,7 @@
 # files
 for_git_commit.ipynb
 data/
+!data/.gitkeep
 
 # Python cache
 __pycache__/
