@@ -1,5 +1,6 @@
-# files 
+# files
 for_git_commit.ipynb
+data/
 
 # Python cache
 __pycache__/
@@ -14,17 +15,11 @@ __pycache__/
 # Gradio
 .gradio/
 
-# OS files
-.DS_Store
-Thumbs.db
 
-# Logs / temp
-*.log
-*.tmp
+# Ignore outputs
+results/
+assets/
 
-# Virtual environments
-venv/
-.env/
 
 # Large ML/data files (optional)
 *.pt
@@ -35,3 +30,4 @@ venv/
 *.pkl
 *.npy
 *.npz
+*.png
