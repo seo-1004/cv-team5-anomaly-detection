@@ -1,8 +1,10 @@
-# cv-team5-anomaly-detection
-
+<div align=center>
+   <h1>cv-team5-anomaly-detection</h1>
 
 Photometric Stereo(PS)로 얻은 Normal Map과 Autoencoder(AE)를 이용해  
 표면 결함을 **pixel-level anomaly map**으로 탐지하는 프로젝트입니다.
+
+</div>
 
 ---
 ## 🚀 Standalone 실행법 (Easy Run Guide)
@@ -90,7 +92,7 @@ Autoencoder 기반 이상 탐지는 **정상 데이터만으로도 결함을 검
 
 ```bash
 cv-team5-anomaly-detection/
-├── download_model.sh
+├── setup.sh
 ├── README.md
 ├── requirements.txt
 ├── run.ipynb                        # Pipeline execution for development and experimentation
