@@ -11,7 +11,9 @@ Photometric Stereo(PS)로 얻은 Normal Map과 Autoencoder(AE)를 이용해
 
 run.ipynb 또는 demo.ipynb의 첫 번째 코드 셀을 실행하면
 repository clone / 모델 다운로드 / 필요한 라이브러리 설치가 자동으로 진행됩니다.
+
 추가 명령어 입력 없이 바로 실행 가능합니다.
+
 (노트북 상단의 초기화 셀에 이미 포함되어 있음)
 
 ---
