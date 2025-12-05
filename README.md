@@ -7,7 +7,7 @@ Photometric Stereo(PS)로 얻은 Normal Map과 Autoencoder(AE)를 이용해
 
 
 ---
-🚀 Easy Run (Google Colab)
+## 🚀 Easy Run (Google Colab)
 
 run.ipynb 또는 demo.ipynb의 첫 번째 코드 셀을 실행하면
 repository clone / 모델 다운로드 / 필요한 라이브러리 설치가 자동으로 진행됩니다.
