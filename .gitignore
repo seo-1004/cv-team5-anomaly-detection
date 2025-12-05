@@ -16,11 +16,8 @@ __pycache__/
 # Gradio
 .gradio/
 
-
 # Ignore outputs
 results/
-assets/
-
 
 # Large ML/data files (optional)
 *.pt
