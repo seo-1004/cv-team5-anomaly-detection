@@ -193,7 +193,7 @@ cv-team5-anomaly-detection/
 
 ### 📌 6. Demo (Gradio)
 
-- 위치: `notebooks/demo.ipynb`
+- 위치: `demo.ipynb`
 - 기능:
   - 사용자가 Normal Map 이미지를 업로드하면
     - Autoencoder 재구성 결과 출력
@@ -214,7 +214,7 @@ cv-team5-anomaly-detection/
 git clone https://github.com/seo-1004/cv-team5-anomaly-detection.git
 cd cv-team5-anomaly-detection
 
-pip install -r requirements.txt
+bash setup.sh
 ```
 #### 🛠 필요 환경
 
@@ -233,7 +233,7 @@ raw/diligent/pmsData/
 
 #### 📌 Normal Map 및 Anomaly 데이터 생성
 
-Colab에서 `notebooks/run.ipynb` 실행 후,  
+Colab에서 `run.ipynb` 실행 후,  
 **Data Generation** 섹션의 셀들을 순서대로 실행합니다.
 
 **생성 결과:**
@@ -268,7 +268,7 @@ processed/anomalies/ → A_.npy, A_.png, M_.npy, M_.png
 
 ### 4️⃣ Training
 
-Colab에서 `notebooks/run.ipynb` 실행 후,
+Colab에서 `run.ipynb` 실행 후,
 **Training Configuration** 섹션을 실행합니다.
 
 학습된 최적 모델은 아래 경로에 저장됩니다:
@@ -285,7 +285,7 @@ checkpoints/autoencoder/best_model_epoch_100.pth
 - **Error Map 계산**
 - **Pixel-level 평가 수행 (AUROC 등)**
 
-Colab에서 `notebooks/run.ipynb`의 **Evaluation** 섹션을 실행하면  
+Colab에서 `run.ipynb`의 **Evaluation** 섹션을 실행하면  
 다음 경로에 결과가 자동 저장됩니다:
 
 ```bash
@@ -315,7 +315,7 @@ results/mask/        # GT Mask 또는 binary mask
 4. **GT Mask(M_*.npy)** 와 비교하여  
 5. **Pixel-level AUROC** 계산
 
-Colab에서 `notebooks/run.ipynb`의 *Evaluation 섹션*을 실행하면  
+Colab에서 `run.ipynb`의 *Evaluation 섹션*을 실행하면  
 AUROC 값이 셀 출력으로 표시됩니다.
 
 ### 🖼️ 6.2 Visualization: 4-way Comparison Plot
@@ -338,11 +338,8 @@ AUROC 값이 셀 출력으로 표시됩니다.
 Colab 환경에서 실행되며, 사용자는 Normal Map 이미지를 업로드하여  
 재구성 결과와 error map을 즉시 확인할 수 있습니다.
 
-Colab에서 다음 노트북을 실행합니다:
+Colab에서 `demo.ipynb` 실행합니다:
 
-```bash
-notebooks/demo.ipynb
-```
 다음은 데모 인터페이스 실행 시 나타나는 출력 예시입니다:
 
 ![Demo](./assets/demo_A_sample.png)
